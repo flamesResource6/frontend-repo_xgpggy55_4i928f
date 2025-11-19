@@ -1,0 +1,25 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 225 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.14.188:3000/
+Files in the public directory are served at the root path.
+Instead of /public/studio/index.html, use /studio/index.html.
+Files in the public directory are served at the root path.
+Instead of /public/studio/styles.css, use /studio/styles.css.
+Files in the public directory are served at the root path.
+Instead of /public/studio/scripts.js, use /studio/scripts.js.
+Files in the public directory are served at the root path.
+Instead of /public/studio/img/p1.jpg, use /studio/img/p1.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/studio/img/p2.jpg, use /studio/img/p2.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/studio/img/p3.jpg, use /studio/img/p3.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/studio/img/p4.jpg, use /studio/img/p4.jpg.
+Files in the public directory are served at the root path.
+Instead of /public/favicon.svg, use /favicon.svg.

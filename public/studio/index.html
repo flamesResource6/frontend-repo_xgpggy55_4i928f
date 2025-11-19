@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Studio — Web Design</title>
+  <meta name="description" content="Modern web-design studio: redesigns, landing pages, e-commerce, and full-stack website development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="./styles.css" as="style">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="../favicon.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="brand" href="#" aria-label="Studio Home">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span>Nova Studio</span>
+      </a>
+
+      <nav class="menu" aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contacts</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-outline" href="#portfolio">View Cases</a>
+        <a class="btn btn-primary" href="#contact">Discuss the Project</a>
+      </div>
+
+      <button class="burger" aria-label="Open Menu" aria-controls="mobile-panel" aria-expanded="false" data-burger>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-panel" id="mobile-panel" data-mobile-panel>
+      <nav class="mobile-menu" aria-label="Mobile Navigation">
+        <a href="#home" data-mobile-link>Home</a>
+        <a href="#about" data-mobile-link>About</a>
+        <a href="#services" data-mobile-link>Services</a>
+        <a href="#portfolio" data-mobile-link>Portfolio</a>
+        <a href="#pricing" data-mobile-link>Pricing</a>
+        <a href="#blog" data-mobile-link>Blog</a>
+        <a href="#contact" data-mobile-link>Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero section">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="kicker">Design. Strategy. Delivery.</span>
+        <h1 class="h1">We design standout websites that convert and inspire</h1>
+        <p class="lead">From concept to launch — we craft bold, conversion-focused digital experiences.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Discuss the Project</a>
+          <a class="btn btn-outline" href="#portfolio">View Cases</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="mock"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About Company -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">About company</span>
+        <h2 class="h2">We blend creativity with performance</h2>
+        <p class="section-desc muted">We are a multidisciplinary team building fast, accessible, and elegant web products. Our approach combines research, design systems, and robust engineering to deliver measurable business value.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">🚀</div>
+            <h3 class="h3">Launch-ready</h3>
+            <p class="muted">Pixel-perfect responsive layouts with strong UX foundations and production quality.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3 class="h3">Performance-first</h3>
+            <p class="muted">Optimized assets, clean code, and Lighthouse-friendly practices across the stack.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">🔒</div>
+            <h3 class="h3">Accessible & secure</h3>
+            <p class="muted">Inclusive UI, ARIA best practices, and modern security standards baked in.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Who we are</span>
+        <h2 class="h2">A compact team of specialists</h2>
+        <p class="section-desc muted">We assemble the right people for each project to move fast without losing quality.</p>
+      </div>
+      <div class="team">
+        <article class="card member reveal">
+          <img src="./img/p1.jpg" alt="Portrait of Alex — Creative Director" loading="lazy">
+          <div class="card-inner">
+            <h3 class="h3">Alex</h3>
+            <small>Creative Director</small>
+            <p class="muted">Brand, art direction, and high-level product vision.</p>
+          </div>
+        </article>
+        <article class="card member reveal">
+          <img src="./img/p2.jpg" alt="Portrait of Mia — Product Designer" loading="lazy">
+          <div class="card-inner">
+            <h3 class="h3">Mia</h3>
+            <small>Product Designer</small>
+            <p class="muted">Design systems, prototyping, and interaction design.</p>
+          </div>
+        </article>
+        <article class="card member reveal">
+          <img src="./img/p3.jpg" alt="Portrait of Noah — Frontend Engineer" loading="lazy">
+          <div class="card-inner">
+            <h3 class="h3">Noah</h3>
+            <small>Frontend Engineer</small>
+            <p class="muted">Accessible, high-performance UI engineered for scale.</p>
+          </div>
+        </article>
+        <article class="card member reveal">
+          <img src="./img/p4.jpg" alt="Portrait of Lea — Project Manager" loading="lazy">
+          <div class="card-inner">
+            <h3 class="h3">Lea</h3>
+            <small>Project Manager</small>
+            <p class="muted">Lean processes, clear communication, on-time delivery.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do (Services) -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">What we do</span>
+        <h2 class="h2">Services tailored to your goals</h2>
+        <p class="section-desc muted">From quick launches to complex platforms, we deliver end-to-end solutions.</p>
+      </div>
+      <div class="grid grid-4">
+        <article class="card service reveal">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">🎯</div>
+            <h3 class="h3">Redesign</h3>
+            <p class="muted">Revamp your existing product to modern standards and boost conversions.</p>
+          </div>
+        </article>
+        <article class="card service reveal">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">📄</div>
+            <h3 class="h3">Landing Page</h3>
+            <p class="muted">High-impact landing pages optimized for performance and SEO.</p>
+          </div>
+        </article>
+        <article class="card service reveal">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">🛒</div>
+            <h3 class="h3">E‑commerce</h3>
+            <p class="muted">Custom storefronts with smooth checkout and analytics integration.</p>
+          </div>
+        </article>
+        <article class="card service reveal">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="card-inner">
+            <div class="icon" aria-hidden="true">⚙️</div>
+            <h3 class="h3">Website Development</h3>
+            <p class="muted">Robust, scalable web apps with modern tooling and CI/CD.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Pricing</span>
+        <h2 class="h2">Simple, transparent plans</h2>
+        <p class="section-desc muted">Pick a plan that aligns with your timeframe and scope. Custom quotes available.</p>
+      </div>
+      <div class="pricing">
+        <article class="card price reveal" aria-label="Starter plan">
+          <div class="card-inner">
+            <h3 class="h3">Starter</h3>
+            <span class="tag">1–2 weeks</span>
+            <div class="num">$1,500</div>
+            <div class="features">
+              <div>• Single page, copy polish</div>
+              <div>• Mobile-first, SEO basics</div>
+              <div>• 1 design iteration</div>
+            </div>
+            <button class="btn btn-outline" aria-label="Choose Starter">Choose</button>
+          </div>
+        </article>
+        <article class="card price reveal" aria-label="Business plan">
+          <div class="card-inner">
+            <h3 class="h3">Business</h3>
+            <span class="tag">2–4 weeks</span>
+            <div class="num">$4,800</div>
+            <div class="features">
+              <div>• Multi-page, blog</div>
+              <div>• Analytics & forms</div>
+              <div>• 2 design iterations</div>
+            </div>
+            <button class="btn btn-primary" aria-label="Choose Business">Choose</button>
+          </div>
+        </article>
+        <article class="card price reveal" aria-label="Pro plan">
+          <div class="card-inner">
+            <h3 class="h3">Pro</h3>
+            <span class="tag">4–8 weeks</span>
+            <div class="num">$9,600</div>
+            <div class="features">
+              <div>• Custom components</div>
+              <div>• Integrations & auth</div>
+              <div>• 3 design iterations</div>
+            </div>
+            <button class="btn btn-outline" aria-label="Choose Pro">Choose</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Portfolio</span>
+        <h2 class="h2">Recent projects</h2>
+        <p class="section-desc muted">Explore by category to see relevant examples.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Portfolio filters">
+        <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="landing">Landing</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="ecom">E‑commerce</button>
+        <button class="filter-btn" role="tab" aria-selected="false" data-filter="app">Web App</button>
+      </div>
+      <div class="portfolio">
+        <article class="tile reveal" data-cat="landing">
+          <img src="./img/w1.jpg" alt="SaaS landing preview" loading="lazy">
+          <div class="overlay">SaaS Landing</div>
+        </article>
+        <article class="tile reveal" data-cat="ecom">
+          <img src="./img/w2.jpg" alt="Lifestyle e-commerce preview" loading="lazy">
+          <div class="overlay">Lifestyle Shop</div>
+        </article>
+        <article class="tile reveal" data-cat="app">
+          <img src="./img/w3.jpg" alt="Dashboard web app preview" loading="lazy">
+          <div class="overlay">Analytics App</div>
+        </article>
+        <article class="tile reveal" data-cat="landing">
+          <img src="./img/w4.jpg" alt="Agency landing preview" loading="lazy">
+          <div class="overlay">Agency Landing</div>
+        </article>
+        <article class="tile reveal" data-cat="ecom">
+          <img src="./img/w5.jpg" alt="Electronics store preview" loading="lazy">
+          <div class="overlay">Electronics</div>
+        </article>
+        <article class="tile reveal" data-cat="app">
+          <img src="./img/w6.jpg" alt="Finance app preview" loading="lazy">
+          <div class="overlay">Fintech App</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Process -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Process</span>
+        <h2 class="h2">How we work</h2>
+      </div>
+      <div class="process">
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="step-num" aria-hidden="true">1</div>
+            <h3 class="h3">Discovery</h3>
+            <p class="muted">Workshops to align on goals, audience, and KPIs.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="step-num" aria-hidden="true">2</div>
+            <h3 class="h3">Design</h3>
+            <p class="muted">Wireframes, UI kit, and interactive prototypes.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="step-num" aria-hidden="true">3</div>
+            <h3 class="h3">Build</h3>
+            <p class="muted">Clean, accessible code with performance budgets.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-inner">
+            <div class="step-num" aria-hidden="true">4</div>
+            <h3 class="h3">Launch</h3>
+            <p class="muted">QA, analytics, and smooth handover or ongoing support.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Contact</span>
+        <h2 class="h2">Let’s talk about your project</h2>
+      </div>
+      <div class="contact-wrap">
+        <form id="contact-form" class="card reveal" novalidate aria-labelledby="contactTitle">
+          <div class="card-inner">
+            <div class="input-row">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+                <span class="error" id="err-name" aria-live="polite"></span>
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@email.com" autocomplete="email" required>
+                <span class="error" id="err-email" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals" required></textarea>
+              <span class="error" id="err-message" aria-live="polite"></span>
+            </div>
+            <label class="consent">
+              <input type="checkbox" name="consent" aria-required="true">
+              <span>I agree to the processing of personal data and accept the <a href="#">privacy policy</a>.</span>
+            </label>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </div>
+        </form>
+        <aside class="card reveal" aria-label="Contact information">
+          <div class="card-inner info">
+            <h3 class="h3">Contact info</h3>
+            <div>Email: <a href="mailto:hello@novastudio.dev">hello@novastudio.dev</a></div>
+            <div>Phone: <a href="tel:+1234567890">+1 (234) 567‑890</a></div>
+            <div>Location: Remote-first, worldwide</div>
+            <div class="social">
+              <a href="#" aria-label="Twitter" title="Twitter">T</a>
+              <a href="#" aria-label="Dribbble" title="Dribbble">D</a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container row">
+      <div>© <span id="year"></span> Nova Studio. All rights reserved.</div>
+      <nav aria-label="Footer">
+        <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" data-modal aria-modal="true" role="dialog" aria-label="Submission result">
+    <div class="modal-card">
+      <h3 class="h3">Thanks! 🎉</h3>
+      <p class="muted">Your message has been sent. We’ll get back to you within 1 business day.</p>
+      <button class="btn btn-primary" data-close-modal>Close</button>
+    </div>
+  </div>
+
+  <script defer src="./scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
